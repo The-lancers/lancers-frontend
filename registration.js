@@ -91,6 +91,13 @@
     });
   });
 
+  var connection = mymongoDB.createConnection({
+    host     : 'localhost',
+    user     : 'root',
+    password : '',
+    database : 'nodelogin'
+  });
+
   //select the form
 //const registrationForm = document.querySelector('.registration-form');
 //const formControl = document.querySelector('.form-control');
