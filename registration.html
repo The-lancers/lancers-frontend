@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdeliver.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=kaushan+Script" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3SlOsibVcOQVnN" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
@@ -12,127 +19,147 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="registration-form-container col 10 justify-content-center">
-                <form class="registration-form row g-3 needs-validation" method="POST" action="." novalidate>
-                    <h2 class="form-header">Registration Form</h2>
-
-                    <div class="col-md-6">
-                        <label for="full_name" class="registration-form">Full Name</label>
-                        <input type="text" class="form-control" requiredid="full_name" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
+            <div class=" col-12 justify-content-center">
+                <div class="myform form">
+                    <div class="col-md-12 text-center">
+                        <h1>Login</h1>
                     </div>
-
-                    <div class="col-md-6">
-                        <label for="username" class="registration-form">Username</label>
-                        <div class="input-group has-validation">
-                            <span class="input-group-text" id="inputGroupPrepend">@</span>
-                            <input type="text" class="form-control" id="username" aria-describedby="inputGroupPrepend" required>
-                            <div class="invalid-feedback">
-                                Please choose a username.
+                    <form class="login-form" method="POST" name="login" action=".">
+                        <div class="col-md-6">
+                            <label for="email" class="login-form">Email address</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <div id="email" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="password" class="login-form">Password</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="col-md-12 form-check">
+                            <input type="checkbox" class="form-check-input" id="checkbox">
+                            <label class="form-check-label" for="checkbox">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-outline-info">Login</button>
+                        <div class="col-md-12">
+                            <div class="login-or">
+                                <hr class="hr-or">
+                                <span class="span-or">or</span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="email" class="registration-form">Email</label>
-                        <input type="email" class="form-control" requiredid="email" name="email" placeholder="email@example.com" required>
-                        <div class="invalid-feedback">
-                            Please provide a valid email address.
+                        <div class="col-md-12 mb-3">
+                            <p class="text-center">
+                                <a href="javascript:void();" class="google btn mybtn"><i class="fa fa-google-plus">Signup using Google</i></a>
+                            </p>
                         </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="password" class="registration-form">Password</label>
-                        <input type="text" class="form-control" id="password" required>
-                        <div class="invalid-feedback">
-                            Please generate alphanumeric Password.
+                        <div class="col-md-12">
+                            <div class="login-form">
+                                <p class="text-center">Don't have an account?<a href="#" id="register">Get started here for free.</a></p>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="gender" class="registration-form">Gender</label>
-                        <select class="form-select" id="gender" required>
-                            <option selected="" value="Default">(Please select your Gender)</option>
-                            <option value="F">Female</option>
-                            <option value="M">Male</option>
-                            <option value="O">Other</option>
-                        </select>    
-                        <div class="invalid-feedback">
-                            Please select your gender.
+                    </form>
+                    <div class="myform form">
+                        <div class="col-md-12 text-center">
+                            <h1>Register Here</h1>
                         </div>
-                    </div>
+                        <form class="registration-form row g-3 needs-validation" method="POST" action="." name="registration" novalidate>
+                    
+                            <div class="col-md-6">
+                                <label for="full_name" class="registration-form">Full Name</label>
+                                <input type="text" class="form-control" requiredid="full_name" required>
+                                <div class="valid-feedback">
+                                    Looks good!
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="username" class="registration-form">Username</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="text" class="form-control" id="username" aria-describedby="inputGroupPrepend" required>
+                                    <div class="invalid-feedback">
+                                        Please choose a username.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="registration-form">Email</label>
+                                <input type="email" class="form-control" requiredid="email" name="email" placeholder="email@example.com" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid email address.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="password" class="registration-form">Password</label>
+                                <input type="text" class="form-control" id="password" required>
+                                <div class="invalid-feedback">
+                                    Please generate alphanumeric Password.
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="gender" class="registration-form">Gender</label>
+                                <select class="form-select" id="gender" required>
+                                    <option selected="" value="Default">(Please select your Gender)</option>
+                                    <option value="F">Female</option>
+                                    <option value="M">Male</option>
+                                    <option value="O">Other</option>
+                                </select>    
+                                <div class="invalid-feedback">
+                                    Please select your gender.
+                                </div>
+                            </div>
     
-                    <div class="col-md-6">
-                        <label for="country" class="registration-form">Country</label>
-                        <select class="form-select" id="country" required>
-                            <option selected="" value="Default">(Please select a country)</option>
-                            <option value="UG">Uganda</option>
-                            <option value="KE">Kenya</option>
-                            <option value="TZ">Tanzania</option>
-                            <option value="RW">Rwanda</option>
-                            <option value="BR">Burundi</option>
-                            <option value="SS">South Sudan</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please select a valid country.
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <label for="city_district" class="registration-form">City/District</label>
-                        <input type="text" class="form-control" id="city_district" required>
-                        <div class="invalid-feedback">
-                            Please provide a valid city or district.
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label" for="invalidCheck">
-                                Agree to terms and conditions
-                            </label>
-                            <div class="invalid-feedback">
-                                You must agree before submitting.
+                            <div class="col-md-6">
+                                <label for="country" class="registration-form">Country</label>
+                                <select class="form-select" id="country" required>
+                                    <option selected="" value="Default">(Please select a country)</option>
+                                    <option value="UG">Uganda</option>
+                                    <option value="KE">Kenya</option>
+                                    <option value="TZ">Tanzania</option>
+                                    <option value="RW">Rwanda</option>
+                                    <option value="BR">Burundi</option>
+                                    <option value="SS">South Sudan</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid country.
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="col-12">
-                        <button class="btn btn-outline-info mt-2" type="submit">Submit form</button>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="registration-form">
-                            <p class="text-center"><a href="#" id="signin">Already have an account?</a></p>
-                        </div>
-                    </div>
-                </form>
-                <form class="login-form">
-                    <div class="col-md-6">
-                        <label for="email" class="login-form">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                        <div id="email" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="password" class="login-form">Password</label>
-                        <input type="password" class="form-control" id="password">
-                    </div>
-                    <div class="col-md-12 form-check">
-                        <input type="checkbox" class="form-check-input" id="checkbox">
-                        <label class="form-check-label" for="checkbox">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-outline-info">Login</button>
-                    <div class="col-md-12">
-                        <div class="login-form">
-                            <p class="text-center">Don't have an account?<a href="#" id="register">Get started for free.</a></p>
-                        </div>
-                    </div>
-                </form>
-            </div>    
-        </div>
-    </div> 
+                            <div class="col-md-6">
+                                <label for="city_district" class="registration-form">City/District</label>
+                                <input type="text" class="form-control" id="city_district" required>
+                                <div class="invalid-feedback">
+                                    Please provide a valid city or district.
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        Agree to terms and conditions
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        You must agree before submitting.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <button class="btn btn-outline-info mt-2" type="submit">Register</button>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="registration-form">
+                                    <p class="text-center"><a href="#" id="signin">Already have an account?</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>  
+                </div>  
+            </div>
+        </div> 
+    </div>
 
     <script src="./registration.js"></script>
 </body>
