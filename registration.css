@@ -9,21 +9,22 @@ a{
 h1{
     font-family: 'kaushan script', cursive;
 }
+
 .myform{
     position: relative;
     display: -ms-flexbox;
     display: flex;
-    padding: 1rem;
+    padding: 2rem;
     -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: #fff;
+    background-color: rgb(243, 248, 250);
     background-clip: padding-box;
-    border: 1px solid rgba(0, 0, 0, .2);
-    border-radius: 1.1rem;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 3rem;
     outline: 0;
-    max-width: 500px;
+    max-width: 700px;
 }
 .tx-tfm{
     text-transform: uppercase;
@@ -34,10 +35,10 @@ h1{
 .login-or {
     position: relative;
     color: #aaa;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .span-or {
     display: block;

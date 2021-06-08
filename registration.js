@@ -44,7 +44,7 @@
   });
 
   (function() {
-    ("form[fullName='registration']").validate({
+    ("form[name='registration']").validate({
       rules: {
         fullName: "required",
         username: {

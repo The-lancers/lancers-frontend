@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
@@ -27,24 +27,26 @@
                     <div class="col-md-12 text-center">
                         <h1>Login</h1>
                     </div>
-                    <form class="login-form" method="POST" name="login" action=".">
+                    <form class="login-form row g-3" method="POST" name="login" action=".">
                         <div class="col-md-6">
                             <label for="email" class="login-form">Email address</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
                             <div id="email" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="col-md-6">
                             <label for="password" class="login-form">Password</label>
-                            <input type="password" class="form-control" id="password">
+                            <input type="password" class="form-control" id="password" required>
                         </div>
                         <div class="col-md-12 form-group">
                             <p class="text-center">By signing up you accept our <a href="#">Terms Of Use</a></p>
                          </div>
                         <div class="col-md-12 form-check">
-                            <input type="checkbox" class="form-check-input" id="checkbox">
+                            <input type="checkbox" class="form-check-input" id="checkbox" required>
                             <label class="form-check-label" for="checkbox">Check me out</label>
                         </div>
-                        <button type="submit" class="btn btn-outline-info">Login</button>
+                        <div class="col-md-12 text-center mb-3">
+                            <button type="submit" class="btn btn-block mybtn btn-outline-info tx-tfm">Login</button>
+                        </div>
                         <div class="col-md-12">
                             <div class="login-or">
                                 <hr class="hr-or">
@@ -152,8 +154,8 @@
                                 </div>
                             </div>
 
-                            <div class="col-12">
-                                <button class="btn btn-outline-info mt-2" type="submit">Register</button>
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-block mybtn btn-outline-info tx-tfm" type="submit">Register</button>
                             </div>
                             <div class="col-md-12">
                                 <div class="registration-form">
