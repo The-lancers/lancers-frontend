@@ -7,26 +7,43 @@ html, body {
 }
 .navbar{
     padding: .8rem;  /*1 rem = 16px */
+
+}
+.navbar-brand{
+    padding-right: 60px;
 }
 .navbar-nav li {
-    padding-right:20px;
+    padding-right:60px;
+    float:right; 
+}
+.navbar-nav >li > a {
+    color: black;
+    text-decoration: none;
+}
+.navbar-nav >li > a:hover{
+    color: #7CCE04;
+    transition: 0.5s;
+    text-decoration: solid underline;
+}
+a:active {
+    color: #7CCE04;
+}
+a:visited {
+    color:  #7CCE04;
+  }
+.nav-link{
+    /* font-size: 1.1em !important; */
+    font-size: 1.1em;
     
 }
-/* .navbar-nav a:hover{
-    color: #7CCE04;
-    transition: 0.5s;
+/* .carousel .carousel-item{
+    max-height: 650px;
 } */
-.nav-link{
-    font-size: 1.1em !important;
-}
-.nav-item a:hover{
-    color: #7CCE04;
-    transition: 0.5s;
-}
-.n
+
 .carousel-inner img{
     width: 100%;
     height: 100%;
+    position: relative; 
 
 }
 /* style caption */
@@ -36,25 +53,30 @@ html, body {
     transform: translateY(-50%);
 }
 .carousel-caption h1{
-    font-size: 500%;
+    font-size: 400%;
+    font-weight: 400;
     text-transform: uppercase;
-    text-shadow: 1px 1px 15px #000;
+    color: #7CCE04;
+    text-align: right;
+    /* text-shadow: 1px 1px 15px #000; */
 }
 .carousel-caption h3{
     font-size: 200%;
     font-weight: 500;
-    text-shadow: 1px 1px 10px #000;
+    color: black;
+    /* text-shadow: 1px 1px 10px #000; */
     padding-bottom: 1rem;
 }
-.btn-primary {
-    background-color: #6648b1;
-    border: 1px solid #6648b1;
-}    
-.btn-primary :hover{
-    background-color: #563d7c;
-    border: 1px solid #6648b1;
-
+.btn-primary-override{
+    background-color: black !important;
+    color:#fff !important; 
+    
 }
+.btn-primary-override:hover {
+    color: #7CCE04 !important;
+      
+}
+
 .padding{
     padding-bottom: 2rem;
 }
@@ -72,11 +94,21 @@ html, body {
     margin-bottom: 1rem;
     text-align: center;
 }
+
 /* services section */
 .section-header{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 15px;
+}
+.card{
+    border-radius: 5px;      
+}
+.card-title{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
 }
 .social a{
     font-size: 4.5em;
@@ -189,3 +221,4 @@ hr.light-100{
     }
     
 }
+
