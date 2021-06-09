@@ -4,9 +4,215 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <title>Our services</title>
+    <style>
+        * {
+   box-sizing: border-box;
+  }
+body {
+/* background-color: whitesmoke; */
+background-image: url("../images/net.jpeg");
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+margin: auto;
+width: 90%;
+padding: 0;
+font-family: "poppins", sans-serif;
+}
+.content {
+  margin-top: 100px;
+  margin-left: 200px;
+  font-size: 20px;
+}
+/* css for contact page */
+.container{
+  border-radius: 25px;
+  margin-top: 200px;
+  /* margin-left: 100px; */ 
+}
+.contact-form hr{
+    color: #7CCE04;
+}
+.contact-form {
+  width:50%;
+  float: left;
+  margin-left: auto;
+  background: whitesmoke;
+  height: auto;
+  text-align: center;
+  border-radius: 25px;
+  border: solid #7CCE04;
+ }
+ /* label, .form-header {
+  font-weight: bold;
+  color: black;
+  display: inline-block;
+} */
+/* Full-width input fields */
+input[type=text], select, input[type=textarea] {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background: #f1f1f1;
+}
+.input-element input, textarea {
+  width:80%;
+  /* padding:5px; */
+  margin-bottom: 4px;
+  border: none;
+  /* outline: solid; */
+  /* border: 1px  #7CCE04; */
+  /* outline-style: dotted; */
+  outline-color: #7CCE04;
+  padding:3px;
+  background: none;
+  border-bottom: 1px solid grey;
+  resize: vertical;
+}
+input[type=text]:focus, input[type=textarea]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+input[type='submit']:hover {
+  cursor: pointer;
+  color: blue;
+  
+}
+input[type='submit'] {
+   background: #7CCE04;
+   border-radius: 8px;
+   border:none;
+   height:40px;
+   width:120px;
+   color: black;
+   text-align: center;
+   font-size: 20px;
+}
+/* reach us on */
+.feed{
+  width:50%;
+  height: auto;
+  text-align: center;
+  float: right;
+  padding:5px;
+  background:whitesmoke;
+  overflow:auto;
+  border: solid #7CCE04;
+  border-radius: 25px;
+}
+.feed .contactInfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.feed .contactInfo .box .icon{
+  min-width: 60px;
+  height: 50px;
+  /* background-color: white; */
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+}
+.feed .contactInfo .box .text{
+  display: flex;
+  margin-left: 10px;
+  font-size: 17px;
+  color: black;
+  flex-direction: row;
+  font-weight: 300;  
+}
+    </style>
 </head>
 <body>
-    
+    <body>
+        <div class="section">
+          <div class="container">
+            <div class="content-section">
+              <div class="title">
+                <h1>Our services</h1>
+              </div>
+              <div class="content">
+                <h3>We offer the best tech services in the country </h3>
+                <div>
+                    <!--our contact form  -->
+                    <div class="contact-form">
+                        <!-- <h2 class="form-header">CONNECT WITH <mark>US....</mark></h2> -->
+                        <p>Please fill in this form to get in tough with <mark>Us....</mark></p>
+                        <hr>
+                        <form class="info-form" method="POST" action="./index.html">
+                            <div input="input-element">
+                                <label for="first_name">Enter First name:</label>
+                                <input type="text" placeholder="Allen" id="first_name" name="first_name"/>
+                            </div>
+                            <div input="input-element">
+                                <label for="last_name">Enter Last name:</label>
+                                <input type="text" placeholder="Nanyonjo" id="last_name" name="last_name"/>
+                            </div>
+                            <div input="input-element">
+                                 <label for="Email">G/Email address:</label>
+                                <input type="text" placeholder="example@gmail.com" id="email" name="email"/>
+                            </div>
+                            <div input="input-element">     
+                                <label for="phone">Telephone No :</label> 
+                                <input type="text" placeholder="0778......"id="phone" name="phone"/>
+                            </div>
+                            <div input="input-element">     
+                                <label for="subject">Your subject:</label>
+                                <input type="text" id="subject" name="subject"/>
+                            </div>
+                            <div input="input-element">     
+                                <label for="review">Message:</label> 
+                                <textarea name="review" cols="25" rows="10">   
+                                </textarea>
+                            </div>
+                            <input type="submit" value="Submit"/>             
+                        </form>
+                    </div>
+                 </div>
+                    <div class="feed">
+                        <h4>Reach us on</h4>
+                        <div class="contactInfo">
+                            <div class="box">
+                                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>Address:</h2>
+                                    <p> Ntinda II road,<br> Kampala,Uganda,<br>Plot 234</p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>Phone:</h2>
+                                    <p>+256 778406544</p>
+                                </div>  
+                            </div>
+                            <div class="box">
+                                <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                </div>
+                                <div class="text">
+                                    <h2>Email:</h2>
+                                    <p>nfo@japotechsolutions.co.ug</p>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
 </body>
 </html>

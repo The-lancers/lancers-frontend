@@ -46,6 +46,7 @@ a:visited {
     position: relative; 
 
 }
+
 /* style caption */
 .carousel-caption {
     position: absolute;
@@ -65,7 +66,7 @@ a:visited {
     font-weight: 500;
     color: black;
     /* text-shadow: 1px 1px 10px #000; */
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 .btn-primary-override{
     background-color: black !important;
