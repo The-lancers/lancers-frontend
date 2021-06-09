@@ -1,7 +1,13 @@
 body{
     padding-top: 4.2rem;
     padding-bottom: 4.2rem;
-    background: aquamarine;
+    background: whitesmoke;
+}
+.cointainer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: space-evenly;
+    justify-items: center;
 }
 a{
     text-decoration: none !important;
