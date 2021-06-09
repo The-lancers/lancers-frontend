@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our</title>
+
+  <style>
+      
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 20px 40px;
+  color: white;
+  background: #000;
+}
+
+.heading {
+  font-size: 60px;
+  color:black;
+}
+
+.heading span {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+
+.profile {
+  flex-basis: 260px;
+}
+
+.profile .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.profile:hover .profile-img {
+  filter: grayscale(0);
+}
+
+.user-name {
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: green;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <h1 class="heading"><span>meet</span>Our Team</h1>
+
+    <div class="profiles">
+      <div class="profile">
+        <img src="../images/allen1.png" class="profile-img">
+
+        <h3 class="user-name">allena</h3>
+        <h5>Software developer</h5>
+        <p>Allen works as our software developer at Japotech solutions. She makes sure all our clients needs are met.
+          Additionally she is a STEM (Science, Technology, Engineering and Math) Educator. 
+          She teaches practical skills in robotics and engineering to children between ages 4 to 17 years</p>
+      </div>
+      <div class="profile">
+        <img src="../images/allen1.png" class="profile-img">
+
+        <h3 class="user-name">Jayne</h3>
+        <h5>Managing Partner</h5>
+        <p>Jayne works as our software developer at Japotech solutions. She makes sure all our clients needs are met.
+          Additionally she is a STEM (Science, Technology, Engineering and Math) Educator. 
+          She teaches practical skills in robotics and engineering to children between ages 4 to 17 years</p>
+      </div>
+      <div class="profile">
+        <img src="../images/allen1.png" class="profile-img">
+
+        <h3 class="user-name">Juliet</h3>
+        <h5>Managing Partner</h5>
+        <p>Juliet works as our software developer at Japotech solutions. She makes sure all our clients needs are met.
+          Additionally she is a STEM (Science, Technology, Engineering and Math) Educator. 
+          She teaches practical skills in robotics and engineering to children between ages 4 to 17 years</p>
+      </div>
+      <div class="profile">
+        <img src="../images/allen1.png" class="profile-img">
+
+        <h3 class="user-name">Hanifa</h3>
+        <h5>Project Manager</h5>
+        <p>Hanifa works as our software developer at Japotech solutions. She makes sure all our clients needs are met.
+          Additionally she is a STEM (Science, Technology, Engineering and Math) Educator. 
+          She teaches practical skills in robotics and engineering to children between ages 4 to 17 years</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
