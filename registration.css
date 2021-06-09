@@ -1,7 +1,11 @@
 body{
     padding-top: 4.2rem;
     padding-bottom: 4.2rem;
-    background: aquamarine;
+    background: whitesmoke;
+}
+.container {
+    justify-content: center;
+
 }
 a{
     text-decoration: none !important;

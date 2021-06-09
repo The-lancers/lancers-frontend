@@ -57,19 +57,8 @@
         password: {
           required: true,
           minlength: 5
-        },
-        gender: {
-          required: true,
-          gender: true
-        },
-        country: {
-          required: true,
-          country: true
-        },
-        cityDistrict: {
-          required: true,
-          cityDistrict: true
-        }
+        },      
+        
       },
 
       messages: {
@@ -80,9 +69,6 @@
         minlength: "your password must be atleast 5 characters long"
         },
         email: " please enter a valid email address",
-        gender: "please choose your gender",
-        country: "please select your country",
-        cityDistrict: "please choose your city_district"
       },
 
       submitHandler: function(form) {
@@ -99,31 +85,30 @@
   });
 
   //select the form
-//const registrationForm = document.querySelector('.registration-form');
-//const formControl = document.querySelector('.form-control');
-//let fullName, username, gender, email, country, cityDistrict;
-//let registration = [];
+const registrationForm = document.querySelector('.registration-form');
+const formControl = document.querySelector('.form-control');
+let fullName, username, email, password;
+let registration = [];
 //let registrationStore = localStorage()
-//console.log(registrationForm);
+console.log(registrationForm);
 
 
 //process registration form submit
-//registrationForm.addEventListener('submit', (e) => {
-//    e.preventDefault();
+registrationForm.addEventListener('submit', (e) => {
+    e.preventDefault();
     //extract data from the form
-//    fullName = registrationForm.full_name.value;
-//    username = registrationForm.username.value;
-//    gender = registrationForm.gender.value;
-//    email= registrationForm.email.value;
-//    country = registrationForm.country.value;
-//    cityDistrict = registrationForm.city_district.value;
+    fullName = registrationForm.full_name.value;
+    username = registrationForm.username.value;
+    email = registrationForm.email.value;
+    password = registrationForm.email.value;
+
     
-//    console.log('****', fullName, username, gender, email, country, cityDistrict);
+    console.log('****', fullName, username, email, password);
 //minor validation
 //    if(fullName && username && gender && email && country && cityDistrict) {
 
 //    } else {
 //        alert('provide all the necessary data.')
 //    }
-//}); 
+}); 
 
