@@ -6,54 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our services</title>
     <style>
-        * {
+     * {
    box-sizing: border-box;
   }
 body {
-background-color: whitesmoke;
+background-color: white;
+/* background-image: url("../images/net.jpeg");
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; */
 margin: auto;
 width: 90%;
 padding: 0;
 font-family: "poppins", sans-serif;
 }
+.navbar{
+  border-bottom: solid 2px #7CCE04;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+.navbar-brand{
+    padding-right: 60px;
+}
+.navbar-nav li {
+    padding-right:60px;
+    float:right; 
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333; */
+}
+.navbar-nav >li > a {
+    color: black;
+    text-decoration: none;
+}
+.navbar-nav >li > a:hover{
+    color: #7CCE04;
+    transition: 0.5s;
+    text-decoration: solid underline;
+}
+a:active {
+    color: #7CCE04;
+}
+a:visited {
+    color:  #7CCE04;
+  }
 .content {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 100px;
   font-size: 20px;
 }
 /* css for contact page */
 .container{
   border-radius: 25px;
-  margin-top: 200px;
+  margin-top: 10px;
   /* margin-left: 100px; */
   
 }
     </style>
 </head>
 <body>
-    <body>
-        <div class="section">
-          <div class="container">
-            <div class="content-section">
-              <div class="title">
-                <h1>Our services</h1>
-              </div>
-              <div class="content">
-                <h3>We offer the best tech services in the country </h3>
-                <div>
-                    <ul>
-                        <li>IT services</li>
-                        <li>Telecom services</li>
-                        <li>Website development</li>
-                        <li>Mobile app development</li>
-                        <li>IT training</li>
-                        <li>Network and internet products</li>
-                    </ul>
-                </div>
-                  
-              </div>
-            </div>
-          </div>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../images/logo.png" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li style="float:right" class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">back home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="section">
+    <div class="container">
+      <div class="content-section">
+        <div class="title">
+          <h1>Our services</h1>
         </div>
+        <div class="content">
+          <h3>We offer the best tech services in the country </h3>
+          <div>
+              <ul>
+                  <li>IT services</li>
+                  <li>Telecom services</li>
+                  <li>Website development</li>
+                  <li>Mobile app development</li>
+                  <li>IT training</li>
+                  <li>Network and internet products</li>
+              </ul>
+          </div>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </body>
 </html>

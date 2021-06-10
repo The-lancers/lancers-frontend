@@ -26,10 +26,32 @@ body {
   background-color: #7CCE04;
   font-family: "Poppins", sans-serif;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333; */
+}
+.navbar-nav >li > a {
+    color: black;
+    text-decoration: none;
+}
+.navbar-nav >li > a:hover{
+    color: #7CCE04;
+    transition: 0.5s;
+    text-decoration: solid underline;
+}
+a:active {
+    color: #7CCE04;
+}
+a:visited {
+    color:  #7CCE04;
+  }
 
 .container {
   margin: 20px 40px;
-  color: whitesmoke;
+  color: white;
 
 }
 
@@ -123,7 +145,21 @@ body {
 }
   </style>
 </head>
-
+<body>
+  <nav class="navbar navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../images/logo.png" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li style="float:right" class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">back home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   <!-- <div class="container-fluid">
     <h1 class="heading"><span>meet </span>Our Team</h1>
     <div class="profiles">
