@@ -7,14 +7,26 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <style>
+      .form-control-primary {
+        margin: 10px;
+        opacity: 0.2;
+        border-radius: 2px;
+      }
       .sidebar {
-          position: relative;
-          top: 2px;
-          bottom: 2px;
+          position: fixed;
+          top: 0;
+          bottom: 0;
           left: 0;
+          z-index: 100;
+          padding: 70px 0 0 10px;
+          border-right: 2px solid #d3d3d3;
           
       }
-
+      .sidebar-left {
+        position: sticky;
+        top: 0;
+        height: calc(100vh - 70px);
+      }
       @media (max-width: 800px) {
           .sidebar {
               top: 11.5rem;
@@ -25,26 +37,26 @@
       .navbar {
           box-shadow: inset 2 -1px 0 rgba(0, 0, 0, .1);
       }
-
-      @media (min-width: 700px) {
+      @media (min-width: 500px) {
           .navbar {
               top: 0;
               position: relative;
-              z-index: 999;
+              z-index: 500;
           }
       }
-
       .sidebar .nav-link {
-          color: rgb(54, 51, 51);
+          color: rgb(93, 90, 126);
       }
       .nav-item {
         padding: 5px;
       }
 
+
   </style>
 </head>
-<body>
-    <nav class="navbar navbar-light bg-light p-3">
+<body> 
+  <!--Navbar-->
+    <nav class="navbar navbar-dark bg-secondary fixed-top flex-md-nowrap p-0 shadow">
         <div class="d-flex col-10 col-md-3 col-lg-2 mb-2 mb-lg-0 flex-wrap flex-md-nowrap justify-content-between">
               <img src="logo.png" class="image-fluid" alt="company-logo">
               <button class="navbar-toggler d-md-none collapsed mb-3" type="button" data-toggle="collapse" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,80 +77,81 @@
           </ul>
         </div>
       </nav>
-      <div class="container-fluid">
-        <div class="row">
-            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-                <div class="position-fixed">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">
-                            <span class="ml-2">Dashboard</span>
-                          </a>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+          <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+              <div class="position-fixed">
+                  <ul class="nav flex-column">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">
+                          <span class="ml-2">Dashboard</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                            <div class="dropdown">
+                              <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Customers
+                              <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">New Customers</a></li>
+                                  <li><a href="#">Active Customers</a></li>
+                                  <li><a href="#">Cancelled Customers</a></li>
+                                </ul>
+                              </span>
+                          </div>
                         </li>
-                        <li class="nav-item">
-                              <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Customers
-                                <span class="caret"></span></button>
-                                  <ul class="dropdown-menu">
-                                    <li><a href="#">New Customers</a></li>
-                                    <li><a href="#">Active Customers</a></li>
-                                    <li><a href="#">Cancelled Customers</a></li>
-                                  </ul>
-                                </span>
-                            </div>
-                          </li>
-                        <li class="nav-item">
-                          <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Payments
-                            <span class="caret"></span></button>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Online</a></li>
-                                <li><a href="#">Bank</a></li>
-                                <li><a href="#">Mobile Money</a></li>
-                              </ul>
-                            </span>
+                      <li class="nav-item">
+                        <div class="dropdown">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Payments
+                          <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Online</a></li>
+                              <li><a href="#">Bank</a></li>
+                              <li><a href="#">Mobile Money</a></li>
+                            </ul>
+                          </span>
+                      </div>
+                    </li>
+                      </li>
+                      <li class="nav-item">
+                        <div class="dropdown">
+                          <button class="btn btn-primary" type="button" data-toggle="dropdown">Deals</button>
                         </div>
                       </li>
-                        </li>
-                        <li class="nav-item">
-                          <div class="dropdown">
-                            <button class="btn btn-primary" type="button" data-toggle="dropdown">Deals</button>
-                          </div>
-                        </li>
-                        <li class="nav-item">
-                          <div class="dropdown">
-                            <button class="btn btn-primary" type="button" data-toggle="dropdown">Inventory</button>
-                          </div>
-                        </li>
-                        <li class="nav-item">
-                          <div class="dropdown">
-                            <button class="btn btn-primary" type="button" data-toggle="dropdown">Products</button>
-                          </div>
-                        </li>
-                        <li class="nav-item">
-                          <div class="dropdown">
-                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Reports
-                            <span class="caret"></span></button>
-                              <ul class="dropdown-menu">
-                                <li><a href="#">Daily</a></li>
-                                <li><a href="#">Weekly</a></li>
-                                <li><a href="#">Monthly</a></li>
-                                <li><a href="#">Annually</a></li>
-                              </ul>
-                            </span>
+                      <li class="nav-item">
+                        <div class="dropdown">
+                          <button class="btn btn-primary" type="button" data-toggle="dropdown">Inventory</button>
                         </div>
-                        </li>
-                  
-                    </ul>
-                </div>
-            </nav>
-            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Overview</li>
-                    </ol>
-                </nav>
+                      </li>
+                      <li class="nav-item">
+                        <div class="dropdown">
+                          <button class="btn btn-primary" type="button" data-toggle="dropdown">Products</button>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <div class="dropdown">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Reports
+                          <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Daily</a></li>
+                              <li><a href="#">Weekly</a></li>
+                              <li><a href="#">Monthly</a></li>
+                              <li><a href="#">Annually</a></li>
+                            </ul>
+                          </span>
+                      </div>
+                      </li>
+                
+                  </ul>
+              </div>
+          </nav>
+          <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4">
+              <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Overview</li>
+                  </ol>
+              </nav>
                 <h1 class="h2">Dashboard</h1>
                 <p>This is Japotech's dashboard which will inludes the company's customer profile, company sales, reports, inventory among others. It will help the company track it's sales system electronically</p>
                 <div class="row my-4">
@@ -191,7 +204,7 @@
            
       </div>
   
-                <footer class="pt-5 d-flex justify-content-between">
+                <footer class="pt-5 d-flex justify-content-center">
                     <span>Copyright © 2020-2021 <a href="">Japotech</a></span>
                     <ul class="nav m-0">
                         <li class="nav-item">
