@@ -20,45 +20,55 @@
 <body>
     <!-- navigation -->
     <!-- <nav class="navbar navbar-expand-md navbar-light bg-white text-dark sticky-top "></nav> -->
-    <nav class="navbar navbar-expand-md bg-white sticky-top ">
+    <nav class="navbar navbar-expand-md  bg-secondary-override sticky-top ">
         <div class="container-fluid">
-          
-          <a class="navbar-brand" href="../lancers-frontend/index.html"> <img src="./images/logo.png">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <button class="navbar-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <a class="navbar-brand" href="#"> <img src="./images/logo.png">
+          </a>
+          <div class="collapse navbar-collapse " id="navbarResponsive">
+            <!-- <ul class="navbar-nav ml-auto mb-2 mb-lg-0"> -->
+            <ul class="navbar-nav mr-auto">  
+              
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/About us.html" target="_blank">About us</a>
+                <a class="nav-link" href="./pages/about.html" target="_blank">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/Our team.html" target="_blank">Our team</a>
+                <a class="nav-link" href="./pages/team.html" target="_blank">Our team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/registration.html"  target="_blank">Get started</a>
+                <a class="nav-link" href="./pages/login.html"  target="_blank">Get started</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./pages/Services.html" target="_blank" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Our services
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./pages/services.html" target="_blank" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./pages/Services.html">App development</a></li>
-                  <li><a class="dropdown-item" href="./pages/Services.html">IT services</a></li>
+                  <li><a class="dropdown-item" href="./pages/services.html">App development</a></li>
+                  <li><a class="dropdown-item" href="./pages/services.html">IT services</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="./pages/Services.html">Training services</a></li>
+                  <li><a class="dropdown-item" href="./pages/services.html">Training services</a></li>
                 </ul>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/services.html" target="_blank">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/Contant Us.html" target="_blank">Contact us</a>
+                <a class="nav-link" href="./pages/contant.html" target="_blank">Contact Us</a>
               </li>
-              <p>+ 256 7785066</p>
+              <!-- <p>+ 256 7785066</p> -->
             </ul>
 
             <!-- <form class="d-flex">
@@ -96,7 +106,7 @@
               <img src="./images/telecom1.png" class="d-block w-100" alt="Japotech solutions">
               <div class="carousel-caption d-none d-md-block">
                 <h1 class="display-2">Welcome to JAPOTECH</h1>
-                <h3 >Your best tech solutions</h3>
+                <h3>Your best tech solutions</h3>
                 <!-- <button type="button" class="btn btn-outline-light btn-lg">GET STARTED</button> -->
                 <a href="registration.html" class="btn btn-primary-override btn-lg">GET STARTED</a>
                 <!-- <button type="button" class="btn btn-primary btn-lg">SIGN IN</button> -->
@@ -126,10 +136,8 @@
       <div class="row welcome text-center">
           <div class="col-12">
               <h1 class="display-4">Building lasting ICT solutions</h1>
+              <p class="lead">Welcome to Japotech solutions, the number one provider of quality & Cost Effective Telecom, IT &Training Services</p>
                <hr> 
-               <div class="col-12">
-                   <p class="lead">welcome to Japotech solutions, the number one provider of quality & Cost Effective Telecom, IT &Training Services</p>
-               </div>
           </div>
       </div>
   </div>
@@ -140,7 +148,7 @@
   <div class="row welcome text-center">
    <div class="col-12">
        <h1 class="display-4">Our services</h1>
-       <p>We offer the best services in the country</p>
+       <!-- <p>We offer the best services in the country</p> -->
    </div>
   </div>
 </div>
@@ -149,19 +157,24 @@
 <div class="row padding">
 <div class="col-md-3">
     <div class="card">
-        <img  class="card-img-top" src="./images/itimage.png" alt="IT services">
+        <!-- <img  class="card-img-top img-fluid" src="./images/fib.png" alt="IT services">
         <div class="card-body">
             <h2 class="card-title">IT services</h2>
             <p class="card-text">From home to office routers/Mi-Fi internet installations
               to the fastest fibre&zigbee networks</p>    
-        </div>
+        </div> -->
+        <img  class="card-img-top" src="./images/fib.png" alt="IT training">
+    <div class="card-body">
+        <h2 class="card-title">IT services</h2>
+        <p class="card-text">Home/office routers&Mi-Fi internet installations</p>     
+       </div>
     </div>
 </div>
 <div class="col-md-3">
    <div class="card">
     <img  class="card-img-top" src="./images/router.png" alt="IT training">
     <div class="card-body">
-        <h2 class="card-title">Training services</h2>
+        <h2 class="card-title">Training</h2>
         <p class="card-text">Professional certified training courses in IT, telecom engineering</p>     
        </div>
    </div>
@@ -179,8 +192,8 @@
    <div class="card">
     <img  class="card-img-top" src="./images/mobile.png" alt="Mobile and web development">
     <div class="card-body">
-        <h2 class="card-title">Mobile & web app development</h2>
-        <p class="card-text">We are have the best mobile and web app developers in the country</p>   
+        <h2 class="card-title">Software development</h2>
+        <p class="card-text">The best mobile and web app developers in the country</p>   
        </div>
    </div>
 </div>
@@ -192,15 +205,16 @@
    <div class="container">
        <div class="row padding">
            <div class="col-lg-6">
-               <h2>More that 10 years at your service</h2>
-               <p>Japotech Solutions is one of the fastest growing ICT companies offering high quality and cost effective telecom, 
-                 IT and training services. Formed in 2016 by a team of seasoned ICT experts, Japotech has become one of the most celebrated Ugandan ICT companies and is now ISO9001 certified. Several customers ranging from telcos, SMEs, NGOs and households have satisfactorily enjoyed the services offered by Japotech Solutions.</p>
+               <h2>About</h2>
+               <p>Formed in 2016 by a team of seasoned ICT experts, Japotech has become one of the most 
+                 celebrated Ugandan ICT companies and is now ISO9001 certified. Several customers ranging from telcos, SMEs,
+                  NGOs and households have satisfactorily enjoyed the services offered by Japotech Solutions.</p>
 
-               <p>Japotech has installed, commissioned and optimized more than 100 telco sites, 
+               <!-- <p>Japotech has installed, commissioned and optimized more than 100 telco sites, 
                  installed internet services for more than 200 customers, built websites for a couple organizations, trained several clients; still counting. Japotech has been able to export services in Morocco, Italy, Spain, Niger and is very focused on building its international portfolio.</p>
-              </p>
+              </p> -->
                <br>   
-               <a href="./pages/About us.html" class="btn btn-primary-override">Read More</a>
+               <a href="./pages/about.html" class="btn btn-primary-override">Read More</a>
            </div>
            <div class="col-lg-6">
                <img src="./images/net.jpeg" alt="" class="img-fluid">
@@ -228,9 +242,9 @@
              <div class="card-body">
                  <h2 class="card-title">Allen Nanyonjo</h2>
                  <hr>
-                 <p class="card-text">Allen works as our software developer at Japotech solutions. She makes sure all our clients needs are met.
-                  Additionally she is a STEM (Science, Technology, Engineering and Math) Educator.</p>
-                 <a href="./pages/Our team.html" class="btn btn-outline-secondary">See profile</a>    
+                 <p class="card-text">Allen works as a software developer at Japotech solutions.She makes sure all our clients needs are met.
+                  Additionally, she is a STEM Educator.</p>
+                 <a href="./pages/team.html" class="btn btn-outline-secondary">See profile</a>    
              </div>
          </div>
      </div>
@@ -241,8 +255,8 @@
                 <h2 class="card-title">Hanifa Najjingo</h2>
                 <hr>
                 <p class="card-text">Hanifa works as our field manager at Japotech solutions. She makes sure all our clients needs are met.
-                  Additionally she is a lawyer</p>
-                <a href="./pages/Our team.html" class="btn btn-outline-secondary">See profile</a>    
+                  Additionally, she is a lawyer</p>
+                <a href="./pages/team.html" class="btn btn-outline-secondary">See profile</a>    
             </div>
         </div>
     </div>
@@ -253,8 +267,8 @@
               <h2 class="card-title">Jayne Masawi</h2>
               <hr>
               <p class="card-text">Jayne works as our senior software developer at Japotech solutions. She makes sure all our clients needs are met.
-                Additionally she is a systems analyst</p>
-              <a href="./pages/Our team.html" class="btn btn-outline-secondary">See profile</a>    
+                Additionally, she is a systems analyst</p>
+              <a href="./pages/team.html" class="btn btn-outline-secondary">See profile</a>    
           </div>
       </div>
   </div>
@@ -265,15 +279,15 @@
                 <h2 class="card-title">Juliet Nabateesa</h2>
                 <hr>
                 <p class="card-text">Juliet works as our Country supervisor at Japotech solutions. She supervises all country sales agents
-                  Additionally she is a Nurse</p>
-                <a href="./pages/Our team.html" class="btn btn-outline-secondary">See profile</a>    
+                  Additionally, she is a Nurse</p>
+                <a href="./pages/team.html" class="btn btn-outline-secondary">See profile</a>    
             </div>
         </div>
         <!-- <hr class="my-4"> -->
     </div>
 </div>
 </div>
-<hr class="my-4">
+<!-- <hr class="my-4"> -->
  <!-- connect with us -->
  <div class="container-fluid padding bg-light">
      <div class="row text-center padding">
@@ -291,7 +305,7 @@
  </div>
   
   <!-- Footer -->
-  <footer class="container-fluid bg-white">
+  <footer class="container-fluid ">
       <div class="row text-center">
           <div class="col-md-4">
               <img src="./images/logo.png" alt="lost">

@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+body{
+    padding-top: 0;
+    padding-bottom: 4.2rem;
+    /* background: white; */
+    background-image: linear-gradient(rgba(250, 212, 212, 0.377), rgba(250, 212, 212, 0.377)),url(../images/bg1.jpeg);
+    
+    
+}
+
+.container {
+    justify-content: center;
+    margin-top: 3%;
+    /* box-shadow: #666;    */
+}
+.logo-login{
+    margin:10px auto 0px auto;
+    display: block;
+    width: 100px;
+    padding-bottom: 20px;
+    
+}
+a{
+    text-decoration: none !important;
+}
+h1{
+    font-family: 'Poppins' sans-serif;
+    font-size: 28px;
+    color: black;
+}
+p{
+    color: #73C152;
+    font-weight: 20px;
+    font-size: 20px;
+}
+#register{
+    color: black;
+    font-size: 20px;
+    font-weight: 20px;
+}
+
+.myform{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2rem;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    /* background-color: #E5E6E1; */
+    background-color: none;
+    background-clip: padding-box;
+    border: 0.5px solid black;
+    border-radius: 1rem;
+    outline: 0;
+    max-width: 500px;
+}
+.tx-tfm{
+    text-transform: uppercase;
+}
+.mybtn{
+    border-radius: 50px;
+    
+}
+.mybtn:hover{
+    color: black;
+}
+.btn-success-override{
+    background-color: #73C152;
+    color:black !important;
+/* .btn-outline-info-override:hover {
+    color: #7CCE04 !important;
+     
+} */
+
+}
+form.error {
+    color: #ff0000;
+}
