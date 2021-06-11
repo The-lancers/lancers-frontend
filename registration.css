@@ -1,11 +1,17 @@
 body{
     padding-top: 4.2rem;
     padding-bottom: 4.2rem;
-    background: whitesmoke;
+    background: linear-gradient(whitesmoke, rgb(51, 105, 51));
 }
 .container {
     justify-content: center;
 
+}
+.login-form {
+    position: relative;
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
 }
 a{
     text-decoration: none !important;
@@ -60,13 +66,19 @@ h1{
     margin-bottom: 0px !important;
 }
 .google {
-    color: #666;
+    color: rgb(0, 174, 255);
     width: 100%;
     height: 40px;
     text-align: center;
+    padding: 5px;
     outline: none;
     border: 1px solid lightgrey;
 }
 form.error {
     color: #ff0000;
+}
+.modal-header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-decoration: rgb(53, 114, 53);
 }

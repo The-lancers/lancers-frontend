@@ -22,23 +22,29 @@
     <div class="container">
         <div class="row">
             <div class=" col-10 offset-1 col-lg-8 offset-lg-2 div-wrapper d-flex justify-content-center align-items-center">
-                <div class="myform form">
+                <div class="myform form justify-content-space-evenly">
                     <div class="col-md-12 text-center">
                         <h1>Login</h1>
                     </div>
-                    <form class="login-form row g-3" method="POST" name="login" action=".">
-                        <div class="col-md-6">
-                            <label for="email" class="login-form">Email address</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                    <form class="login-form" id="login-form" method="POST" name="login" action=".">
+                        <div class="col-md-12">
+                            <label for="user_login" class="login-username">Username or Email Address</label>
+                            <input type="text" class="form-control" id="email" aria-describedby="emailHelp" required>
                             <div id="email" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                             <label for="password" class="login-form">Password</label>
                             <input type="password" class="form-control" id="password" required>
                         </div>
-                        <div class="col-md-12 text-center mb-3">
+
+                        <div>
+			                <p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label></p>
+                        </div>
+
+                        <div class="col-md-12 text-center mb-5">
                             <button type="submit" class="btn btn-block mybtn btn-outline-info tx-tfm">Login</button>
                         </div>
+
                         <div class="col-md-12">
                             <div class="login-or">
                                 <hr class="hr-or">
@@ -47,7 +53,7 @@
                         </div>
                         <div class="col-md-12 mb-3">
                             <p class="text-center">
-                                <a href="javascript:void();" class="google btn mybtn"><i class="fa fa-google-plus">Signup using Google</i></a>
+                                <a href="javascript:void();" class="google btn mybtn"><i class="fa fa-google-plus">  Signup using Google</i></a>
                             </p>
                         </div>
                         <div class="col-md-12">
@@ -56,70 +62,85 @@
                             </div>
                         </div>
                     </form>
-                    <div class="myform form">
-                        <div class="col-md-12 text-center">
-                            <h1>Signup</h1>
+                
+                    <Span class="btn btn-outline-info mt-2 tx-tfm" data-bs-toggle="modal" data-bs-target="#registration-form">Register Here</span>
+                    <div class="modal fade" id="registration-form" tabindex="-1" aria-labelledby="registration-form" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Administration Registration Form</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="myform form">
+                                        <div class="col-md-12 text-center">
+                                            <h1>Register</h1>
+                                        </div>
+                                        <form class="registration-form row g-3 needs-validation" method="POST" action="." name="registration" novalidate>
+                                
+                                            <div class="col-md-6">
+                                                <label for="full_name" class="registration-form">Full Name</label>
+                                                <input type="text" class="form-control" requiredid="full_name" required>
+                                                <div class="valid-feedback">
+                                                    Looks good!
+                                                </div>
+                                            </div>
+            
+                                            <div class="col-md-6">
+                                                <label for="username" class="registration-form">Username</label>
+                                                <div class="input-group has-validation">
+                                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                    <input type="text" class="form-control" id="username" aria-describedby="inputGroupPrepend" required>
+                                                        <div class="invalid-feedback">
+                                                            Please choose a username.
+                                                        </div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="col-md-6">
+                                                <label for="email" class="registration-form">Email</label>
+                                                <input type="email" class="form-control" requiredid="email" name="email" placeholder="email@example.com" required>
+                                                <div class="invalid-feedback">
+                                                    Please provide a valid email address.
+                                                </div>
+                                            </div>
+            
+                                            <div class="col-md-6">
+                                                <label for="password" class="registration-form">Password</label>
+                                                <input type="text" class="form-control" id="password" required>
+                                                <div class="invalid-feedback">
+                                                    Please generate alphanumeric Password.
+                                                </div>
+                                            </div>
+            
+                                            <div class="col-12">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                    <label class="form-check-label" for="invalidCheck">
+                                                        Agree to terms and conditions
+                                                    </label>
+                                                    <div class="invalid-feedback">
+                                                        You must agree before submitting.
+                                                    </div>
+                                                </div>
+                                            </div>
+            
+                                            <div class="col-md-12 text-center">
+                                                <button class="btn btn-block mybtn btn-outline-info tx-tfm" type="submit">Register</button>
+                                            </div>
+           
+                                            <div class="col-md-12">
+                                                <div class="registration-form">
+                                                    <p class="text-center"><a href="#" id="signin">Already have an account?</a></p>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>  
+                                </div>  
+                            </div>
                         </div>
-                        <form class="registration-form row g-3 needs-validation" method="POST" action="." name="registration" novalidate>
-                    
-                            <div class="col-md-6">
-                                <label for="full_name" class="registration-form">Full Name</label>
-                                <input type="text" class="form-control" requiredid="full_name" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="username" class="registration-form">Username</label>
-                                <div class="input-group has-validation">
-                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                    <input type="text" class="form-control" id="username" aria-describedby="inputGroupPrepend" required>
-                                    <div class="invalid-feedback">
-                                        Please choose a username.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="email" class="registration-form">Email</label>
-                                <input type="email" class="form-control" requiredid="email" name="email" placeholder="email@example.com" required>
-                                <div class="invalid-feedback">
-                                    Please provide a valid email address.
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="password" class="registration-form">Password</label>
-                                <input type="text" class="form-control" id="password" required>
-                                <div class="invalid-feedback">
-                                    Please generate alphanumeric Password.
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                    <label class="form-check-label" for="invalidCheck">
-                                        Agree to terms and conditions
-                                    </label>
-                                    <div class="invalid-feedback">
-                                        You must agree before submitting.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-12 text-center">
-                                <button class="btn btn-block mybtn btn-outline-info tx-tfm" type="submit">Signup</button>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="registration-form">
-                                    <p class="text-center"><a href="#" id="signin">Already have an account?</a></p>
-                                </div>
-                            </div>
-                        </form>
-                    </div>  
-                </div>  
+                    </div>
+                </div>
             </div>
         </div> 
     </div>
