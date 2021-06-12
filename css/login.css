@@ -4,7 +4,9 @@ body{
     padding-bottom: 4.2rem;
     /* background: white; */
     background-image: linear-gradient(rgba(250, 212, 212, 0.377), rgba(250, 212, 212, 0.377)),url(../images/bg1.jpeg);
-    
+    background-repeat: no-repeat-Y;
+    background-size: cover;
+    background-position: center;
     
 }
 
@@ -26,10 +28,10 @@ a{
 h1{
     font-family: 'Poppins' sans-serif;
     font-size: 28px;
-    color: black;
+    color: #73C152;
 }
 p{
-    color: #73C152;
+    color: black;
     font-weight: 20px;
     font-size: 20px;
 }
