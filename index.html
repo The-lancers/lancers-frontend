@@ -14,33 +14,24 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
     
-    <title>Home Page</title>
+    <title>Home</title>
 
 </head>
 <body>
     <!-- navigation -->
     <!-- <nav class="navbar navbar-expand-md navbar-light bg-white text-dark sticky-top "></nav> -->
     <nav class="navbar navbar-expand-md  bg-secondary-override fixed-top ">
-        <div class="container-fluid">
-          <!-- <button class="navbar-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="sr-only"></span>
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            <span class="navbar-toggler-icon"></span>
+        <div class="container">
+          <a class="navbar-brand" id="nav-logo" href="./index.html"> <img src="./images/logo.png" width="80" height="90" alt="japotech solutions logo" >
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" id="nav-logo" href="#"> <img src="./images/logo.png" width="90" height="100" alt="japotech solutions logo" >
-          </a>
           <div class="collapse navbar-collapse " id="navbarResponsive">
             <!-- <ul class="navbar-nav ml-auto mb-2 mb-lg-0"> -->
-            <ul class="navbar-nav mr-auto">  
-              
+            <ul class="navbar-nav ml-auto">  
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home<span class="sr-only">(current)</span></a>
+                <a class="nav-link" aria-current="page" href="#">Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/about.html" target="_blank">About Us</a>
@@ -49,35 +40,16 @@
                 <a class="nav-link" href="./pages/team.html" target="_blank">Our team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/login.html"  target="_blank">Get started</a>
+                <a class="nav-link active" id="getstarted" href="./pages/login.html"  target="_blank">Get started</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="./pages/services.html" target="_blank">Enrollment</a>
-              </li> -->
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./pages/services.html" target="_blank" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./pages/services.html">App development</a></li>
-                  <li><a class="dropdown-item" href="./pages/services.html">IT services</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="./pages/services.html">Training services</a></li>
-                </ul>
-              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="./pages/services.html" target="_blank">Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/contact.html" target="_blank">Contact Us</a>
               </li>
-              <!-- <p>+ 256 7785066</p> -->
+              
             </ul>
-
-            <!-- <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
           </div>
         </div>
       </nav>
@@ -97,7 +69,7 @@
                   <h1 class="display-2">Welcome to JAPOTECH</h1>
                   <h3 >Your best tech solutions</h3>
                   <!-- <button type="button" class="btn btn-outline-light btn-lg">GET STARTED</button> -->
-                  <a href="./pages/registration.html" class="btn btn-primary-override btn-lg">GET STARTED</a>
+                  <a href="./pages/login.html" class="btn btn-primary-override btn-lg">GET STARTED</a>
                   <!-- <button type="button" class="btn btn-primary btn-lg">SIGN IN</button> -->
                   <!-- <a href="./pages/Get started.html" class="btn btn-primary btn-lg">SIGN IN</a>    -->
               </div>
@@ -111,7 +83,7 @@
                 <h1 class="display-2">Welcome to JAPOTECH</h1>
                 <h3>Your best tech solutions</h3>
                 <!-- <button type="button" class="btn btn-outline-light btn-lg">GET STARTED</button> -->
-                <a href="registration.html" class="btn btn-primary-override btn-lg">GET STARTED</a>
+                <a href="./pages/login.html" class="btn btn-primary-override btn-lg">GET STARTED</a>
                 <!-- <button type="button" class="btn btn-primary btn-lg">SIGN IN</button> -->
                 <!-- <a href="./pages/Get started.html" class="btn btn-primary btn-lg">SIGN IN</a>    -->
             </div>
@@ -125,15 +97,13 @@
             <div class="carousel-item">
               <img src="./images/telecommunication-services.jpeg" class="d-block w-100" alt="Japotech solutions">
               <div class="carousel-caption d-none d-md-block">
-                <h1>Best telecommunication-services </h1>
+                <h3>Best telecommunication-services </h3>
                
               </div>
             </div>
         </div>
       </div>
-      
-      
-  
+    
   <!-- Second container welcome message-->
   <div class="container-fluid padding">
       <div class="row welcome text-center">
@@ -215,14 +185,15 @@
                  celebrated Ugandan ICT companies and is now ISO9001 certified. Several customers ranging from telcos, SMEs,
                   NGOs and households have satisfactorily enjoyed the services offered by Japotech Solutions.</p>
 
-               <!-- <p>Japotech has installed, commissioned and optimized more than 100 telco sites, 
-                 installed internet services for more than 200 customers, built websites for a couple organizations, trained several clients; still counting. Japotech has been able to export services in Morocco, Italy, Spain, Niger and is very focused on building its international portfolio.</p>
-              </p> -->
+               <p>Japotech has installed, commissioned and optimized more than 100 telco sites, 
+                 installed internet services for more than 200 customers, built websites for a 
+                 couple organizations, trained several clients; still counting. Japotech has been able to export services in Morocco, Italy, Spain, Niger and is very focused on building its international portfolio.</p>
+              </p>
                <br>   
                <a href="./pages/about.html" class="btn btn-primary-override">Read More</a>
            </div>
            <div class="col-lg-6">
-               <img src="./images/net.jpeg" alt="" class="img-fluid">
+               <img src="./images/bg1.jpeg" width="100%" height="50px" alt="" class="img-fluid">
            </div>
        </div>
    </div>
@@ -249,7 +220,7 @@
                  <hr>
                  <p class="card-text">Allen works as a software developer at Japotech solutions.She makes sure all our clients needs are met.
                   Additionally, she is a STEM Educator.</p>
-                 <a href="./pages/team.html" class="btn btn-outline-secondary">See profile</a>    
+                 <a href="./pages/team.html" class="btn btn-primary-override">See profile</a>    
              </div>
          </div>
      </div>
@@ -261,7 +232,7 @@
                 <hr>
                 <p class="card-text">Hanifa works as our field manager at Japotech solutions. She makes sure all our clients needs are met.
                   Additionally, she is a lawyer</p>
-                <a href="./pages/team.html" class="btn btn-outline-secondary">See profile</a>    
+                <a href="./pages/team.html" class="btn btn-primary-override">See profile</a>    
             </div>
         </div>
     </div>
@@ -273,7 +244,7 @@
               <hr>
               <p class="card-text">Jayne works as our senior software developer at Japotech solutions. She makes sure all our clients needs are met.
                 She is a systems analyst</p>
-              <a href="./pages/team.html" class="btn btn-outline-secondary">See profile</a>    
+              <a href="./pages/team.html" class="btn btn-primary-override">See profile</a>    
           </div>
       </div>
   </div>
@@ -285,7 +256,7 @@
                 <hr>
                 <p class="card-text">Juliet works as our Country supervisor at Japotech solutions. She supervises all country sales agents
                   Additionally, she is a Nurse</p>
-                <a href="./pages/team.html" class="btn btn-outline-secondary">See profile</a>    
+                <a href="./pages/team.html" class=" btn btn-primary-override">See profile</a>    
             </div>
         </div>
         <!-- <hr class="my-4"> -->

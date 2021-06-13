@@ -6,18 +6,22 @@ html, body {
     color: black;
 }
 .navbar{
-    padding: .8rem;  /*1 rem = 16pxlightgrayrgb(243, 245, 247) */
-    background-color: rgb(204, 209, 204);
-
+     /*1 rem = 16pxlightgrayrgb(243, 245, 247) */
+     /* padding: .8rem;  */
+     background-color: rgb(204, 209, 204);
+     height: 100px;    
 }
-
 .navbar-brand{
-    padding-right: 60px;
-         
+    padding-right: 60px;       
 }
+/* #nav-logo{
+    margin-left: 2px;
+} */
 .navbar-nav li {
-    padding-right:80px;
-    float:right; 
+    padding-right:60px;
+    /* float:right;  */
+    /* margin-right: 0px; */   
+    
 }
 .navbar-nav >li > a {
     color: black;
@@ -29,24 +33,17 @@ html, body {
     transition: 0.5s;
     text-decoration: solid;
 }
-.navbar-nav >li > a:active{
+/* .navbar-nav >li > a:active{
     color: #73C152;
+} */
+.active{
+    background-color: white;
+    border-radius: 5px;
 }
-.nav-link:active{
-    color: #73C152;
-}
-a:visited {
-    color:  #73C152;
-  }
 .nav-link{
     /* font-size: 1.1em !important; */
-    font-size: 1.2em;
-    
+    font-size: 1.2em;   
 }
-/* .carousel .carousel-item{
-    max-height: 650px;
-} */
-
 .carousel-inner img{
     width: 100%;
     height: 100%;
@@ -61,12 +58,14 @@ a:visited {
     transform: translateY(-50%);
 }
 .carousel-caption h1{
-    font-size: 400%;
+    font-size: 370%;
     font-weight: 400;
     text-transform: uppercase;
     color: #73C152;
+    padding-bottom: 1rem;
     text-align: right;
-    /* text-shadow: 1px 1px 15px #000; */
+    
+    text-shadow: 1px 1px 15px #000;
 }
 .carousel-caption h3{
     font-size: 200%;
@@ -74,14 +73,15 @@ a:visited {
     color: black;
     /* text-shadow: 1px 1px 10px #000; */
     padding-bottom: 2rem;
+    float: right;
 }
 .btn-primary-override{
-    background-color: black !important;
-    color:#fff !important; 
+    background-color: #73C152 !important;
+    color: black !important; 
     
 }
 .btn-primary-override:hover {
-    color: #73C152 !important;
+    color: #fff !important;
       
 }
 
@@ -216,6 +216,7 @@ hr.light-100{
 }
 /* media querries*/
 @media(max-width: 992px){
+
     .social a{
         font-size: 4em;
         padding: 2rem;

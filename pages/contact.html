@@ -5,238 +5,181 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
-    <title>Connect with us</title>
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+    <title>Contact us</title>
     <style>
-        * {
+   * {
    box-sizing: border-box;
   }
-
-
 .navbar{
-  border-bottom: solid 1px #73C152;
-  
+    padding-left: 100px;
+    padding-top: 50px;
+    text-decoration: underline;
+    border-bottom: 1px solid #73C152;
+    background-color: rgb(204, 209, 204);
+    font-size: 22px;
+    
+} 
+.navbar-brand{
+    font-size: 22px;
 }
-.navbar-nav >li > a {
+.nav-link{
+    padding-right: 100px;
     color: black;
-    text-decoration: none;
+    text-decoration:  underline;
 }
-.navbar-nav >li > a:hover{
-    color: #73C152;
+.nav-link:hover{
+    color: #7CCE04;
     transition: 0.5s;
-    text-decoration: solid underline;
+    
+}      
+.bg-light-override{
+    background-color: rgb(204, 209, 204);
 }
-a:active {
-    color: #73C152;
+.section{
+  background-color: white;
+  margin-top: 30px;
+  /* padding-top: 0;  */
 }
-a:visited {
-    color:  #73C152;
-  }
-.content {
-  margin-top: 50px;
-  margin-left: 200px;
-  font-size: 20px;
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    /* font-weight: bold; */
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    display: block;
+
 }
-/* css for contact page */
-.container{
-  border-radius: 25px;
-  margin-top: 10px;
-  /* margin-left: 100px; */ 
-}
-.contact-form hr{
-    color: #73C152;
-}
-.contact-form {
-  width:50%;
-  float: left;
-  margin-left: auto;
-  background: whitesmoke;
-  height: auto;
-  text-align: center;
-  border-radius: 25px;
-  border: solid #73C152;
- }
- /* label, .form-header {
-  font-weight: bold;
+h1 span {
+  color: #73C152;
+} 
+.bg-primary-override{
+  background-color: #73C152;
   color: black;
-  display: inline-block;
-} */
-/* Full-width input fields */
-input[type=text], select, input[type=textarea] {
-  width: 50%;
-  padding: 12px;
-  border: 1px solid black;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  background: #f1f1f1;
 }
-.input-element input, textarea {
-  width:80%;
-  /* padding:5px; */
-  margin-bottom: 4px;
-  border: none;
-  /* outline: solid; */
-  /* border: 1px  #7CCE04; */
-  /* outline-style: dotted; */
-  outline-color: #73C152;
-  padding:3px;
-  background: none;
-  border-bottom: 1px solid grey;
-  resize: vertical;
+.btn-success-override{
+  background-color: #73C152;
+  margin-top: 15px;
+  /* border-radius: 10px; */
+  border-radius: 30px;
+	border: round;
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 12px 45px;
+	/* letter-spacing: 1px; */
+	text-transform: uppercase;
 }
-input[type=text]:focus, input[type=textarea]:focus {
-  background-color: #ddd;
-  outline: none;
+border-primary-override{
+  color: #73C152;
 }
-input[type='submit']:hover {
-  cursor: pointer;
-  color: blue;
-  
+.card{
+  border-radius: 10px;  
 }
-input[type='submit'] {
-   background: #73C152;
-   border-radius: 8px;
-   border:none;
-   height:40px;
-   width:120px;
-   color: black;
-   text-align: center;
-   font-size: 20px;
-}
-/* reach us on */
-.feed{
-  width:50%;
-  height: auto;
-  text-align: center;
-  float: right;
-  padding:5px;
-  background:whitesmoke;
-  overflow:auto;
-  border: solid #73C152;
-  border-radius: 25px;
-}
-.feed .contactInfo .box{
-  position: relative;
-  padding: 20px 0;
-  display: flex;
-}
-.feed .contactInfo .box .icon{
-  min-width: 60px;
-  height: 50px;
-  /* background-color: white; */
-  justify-content: center;
-  align-items: center;
-  font-size: 17px;
-}
-.feed .contactInfo .box .text{
-  display: flex;
-  margin-left: 10px;
-  font-size: 17px;
-  color: black;
-  flex-direction: row;
-  font-weight: 300;  
+.form-group{
+  padding-bottom: 8px;
 }
     </style>
 </head>
 <body>
-  <nav class="navbar navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="../images/logo.png" width="90" height="100" alt="japotech solutions logo">
-      </a>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-          <li style="float:right" class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">back home</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+  <body>
+    <!-- As a heading -->
+<nav class="navbar navbar-light bg-light-override sticky-top ">
+    <!-- <a class="navbar-brand" href="#">
+        <img src="../images/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+    <span class="navbar-brand mb-0 h1">Contact Us</span>
+    <!-- <li style="float:right" class="nav-item"> -->
+    <a class="nav-link" aria-current="page" style="float:right" href="../index.html">Home</a>           
   </nav>
 
   <div class="section">
     <div class="container">
-      <div class="content-section">
-        <div class="title">
-          <h1>Connect with us</h1>
-        </div>
-        <div class="content">
-          <h3>We offer the best tech services in the country </h3>
-          <div>
-              <!--our contact form  -->
-              <div class="contact-form">
-                  <!-- <h2 class="form-header">CONNECT WITH <mark>US....</mark></h2> -->
-                  <p>Please fill in this form to get in tough with <mark>Us....</mark></p>
-                  <hr>
-                  <form class="info-form" method="POST" action="./index.html">
-                      <div input="input-element">
-                          <label for="first_name">Enter First name:</label>
-                          <input type="text" placeholder="Allen" id="first_name" name="first_name"/>
-                      </div>
-                      <div input="input-element">
-                          <label for="last_name">Enter Last name:</label>
-                          <input type="text" placeholder="Nanyonjo" id="last_name" name="last_name"/>
-                      </div>
-                      <div input="input-element">
-                           <label for="Email">G/Email address:</label>
-                          <input type="text" placeholder="example@gmail.com" id="email" name="email"/>
-                      </div>
-                      <div input="input-element">     
-                          <label for="phone">Telephone No :</label> 
-                          <input type="text" placeholder="0778......"id="phone" name="phone"/>
-                      </div>
-                      <div input="input-element">     
-                          <label for="subject">Your subject:</label>
-                          <input type="text" id="subject" name="subject"/>
-                      </div>
-                      <div input="input-element">     
-                          <label for="review">Message:</label> 
-                          <textarea name="review" cols="25" rows="10">   
-                          </textarea>
-                      </div>
-                      <input type="submit" value="Submit"/>             
-                  </form>
+      <!--Contact heading-->
+      <h1>Connect with <span>japotech </span>solutions</h1>
+      <div class="row">
+        <div class="col-sm-12 text-center mb-4">
+         <!-- <a class="btn btn-primary" target="_blank" href="https://www.paypal.com/webapps/shoppingcart?flowlogging_id=f8876459b9ac2&mfid=1619175810225_f8876459b9ac2#/checkout/openButton"></a> Find Us now <i class="fa fa-map-marker"></i></a> -->
+       </div>
+        <!--Grid column-->
+        <div class="col-sm-12 mb-4 col-md-5">
+           <!--Form with header-->
+           <div class="card border-primary-override">
+              <div class="card-header p-0">
+                 <div class="bg-primary-override text-center py-2">
+                    <h3><i class="fa fa-envelope"></i> Write to us:</h3>
+                    <p class="m-0">Real time response.</p>
+                 </div>
+              </div>
+              <div class="card-body p-3">
+                 
+                    <div class="form-group">
+                    <label> Your name </label>
+                    <div class="input-group">
+                       <input value="" type="text" name="data[name]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Your name">
+                    </div>
+                  </div>
+                    <div class="form-group">
+                       <label>Your email</label>
+                       <div class="input-group mb-2 mb-sm-0">
+                          <input type="email" value="" name="data[email]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Email">
+                       </div>
+                    </div>
+                    <div class="form-group">
+                       <label>Subject</label>
+                       <div class="input-group mb-2 mb-sm-0">
+                          <input type="text" name="data[subject]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Subject">
+                       </div>
+                    </div>
+                    <div class="form-group">
+                       <label>Message</label>
+                       <div class="input-group mb-2 mb-sm-0">
+                          <input type="text" class="form-control" name="message">
+                       </div>
+                    </div>
+                    <div class="text-center">
+                       <input type="submit" name="submit" value="Submit" id="submit"class="btn btn-success-override  rounded-0 py-2">
+                    </div>
+                   </div>     
               </div>
            </div>
-              <div class="feed">
-                  <h4>Reach us on</h4>
-                  <div class="contactInfo">
-                      <div class="box">
-                          <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                          </div>
-                          <div class="text">
-                              <h2>Address:</h2>
-                              <p> Ntinda II road,<br> Kampala,Uganda,<br>Plot 234</p>
-                          </div>
-                      </div>
-                      <div class="box">
-                          <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
-                          </div>
-                          <div class="text">
-                              <h2>Phone:</h2>
-                              <p>+256 778406544</p>
-                          </div>  
-                      </div>
-                      <div class="box">
-                          <div class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i>
-                          </div>
-                          <div class="text">
-                              <h2>Email:</h2>
-                              <p>info@japotechsolutions.co.ug</p>
-                          </div>  
-                      </div>
-                  </div>
+        <!--Grid column-->
+        
+        <!--Grid column-->
+        <div class="col-sm-12 col-md-7">
+           <!--Google map-->
+           <div class="mb-4">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d117223.77996815204!2d85.3213263!3d23.3432048!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11b5a9b0042eef56!2sourcita.com!5e0!3m2!1sen!2sin!4v1589706571407!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+           </div>
+           <!--Buttons-->
+           <div class="row text-center">
+              <div class="col-md-4">
+                 <a class="bg-primary-override px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-map-marker"></i></a>
+                 <p>Ntinda II road,Kampala </p>
               </div>
-          </div>
-            
+              <div class="col-md-4">
+                 <a class="bg-primary-override px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-phone"></i></a>
+                 <p>+256 778406544</p>
+              </div>
+              <div class="col-md-4">
+                 <a class="bg-primary-override px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-envelope"></i></a>
+                 <p>info@japotechsolutions.co.ug</p>
+              </div>
+           </div>
         </div>
-      </div>
+        <!--Grid column-->
+          </div>
     </div>
   </div>
-        
+                
 </body>
 </html>
