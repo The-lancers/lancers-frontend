@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins' sans-serif;
+    color: black;
+}
+.navbar{
+     /*1 rem = 16pxlightgrayrgb(243, 245, 247) */
+     /* padding: .8rem;  */
+     background-color: rgb(204, 209, 204);
+     height: 100px;    
+}
+.navbar-brand{
+    padding-right: 60px;       
+}
+/* #nav-logo{
+    margin-left: 2px;
+} */
+.navbar-nav li {
+    padding-right:60px;
+    /* float:right;  */
+    /* margin-right: 0px; */   
+    
+}
+.navbar-nav >li > a {
+    color: black;
+    /* font-weight: 20%; */
+    text-decoration: none;
+}
+.navbar-nav >li > a:hover{
+    color: #73C152;
+    transition: 0.5s;
+    text-decoration: solid;
+}
+/* .navbar-nav >li > a:active{
+    color: #73C152;
+} */
+.active{
+    background-color: white;
+    border-radius: 5px;
+}
+.nav-link{
+    /* font-size: 1.1em !important; */
+    font-size: 1.2em;   
+}
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+    position: relative; 
+
+}
+
+/* style caption */
+.carousel-caption {
+    position: absolute;
+    top: 50;
+    transform: translateY(-50%);
+}
+.carousel-caption h1{
+    font-size: 370%;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #73C152;
+    padding-bottom: 1rem;
+    text-align: right;
+    
+    text-shadow: 1px 1px 15px #000;
+}
+.carousel-caption h3{
+    font-size: 200%;
+    font-weight: 500;
+    color: black;
+    /* text-shadow: 1px 1px 10px #000; */
+    padding-bottom: 2rem;
+    float: right;
+}
+.btn-primary-override{
+    background-color: #73C152 !important;
+    color: black !important; 
+    
+}
+.btn-primary-override:hover {
+    color: #fff !important;
+      
+}
+
+.padding{
+    padding-bottom: 2rem;
+}
+/* welcome section */
+.welcome{
+    width: 90%;
+    /* margin: 0 auto; */
+    margin-left: 50px;
+    padding-top: 2rem;
+    padding-left: 9rem;
+    padding-right: 2rem;
+    text-align: center;
+}
+.welcome hr {
+    /* #b4b4b4 */
+    border-top: 2px solid #73C152;
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+h1.display-4{
+    font-size: 30px;
+}
+
+/* services section */
+/* .services{
+    width: 90%;
+    margin-left: 50px;
+    padding-top: 1rem;
+    padding-left: 9rem;
+    padding-right: 2rem;
+    text-align: center;
+} */
+.card{
+    border-radius: 4px;
+    min-height: 400px;
+    min-width: 200px;      
+}
+
+ .card-img-top {
+    width: 100%;
+    height: 15vw;   
+    object-fit: cover;
+}
+/*.card img{
+    transform: translateY(-50px);
+    border-radius: 15px;
+    z-index: 1;
+} */
+/* .card .card-body{
+    visibility:hidden;
+    transform: translateY(-150px);
+    height: 0px;
+} */
+/* .card:hover .card-body{
+    visibility:hidden;
+    transform: translateY(50px);
+    transition: 5s;
+    height: auto;
+} */
+.card-title{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.card-body{
+    /* margin: 20px 60px 80px 60px; */
+    text-align: center;
+    padding-bottom: 5px;
+}
+.card-text{
+    text-align: center;
+    font-size: 15px;
+}
+/* about section */
+
+/* team section */
+.social a{
+    font-size: 4.5em;
+    padding: 3rem;  
+}
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-twitter{
+    color: #00aced;
+}
+.fa-linkedin{
+    color: #007bb5;
+    /* color: white; */
+  }
+.fa-instagram{
+    color: #517fa4;
+}
+.fa-youtube{
+    color: #bb0000;
+}
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-facebook :hover,
+.fa-twitter :hover, 
+.fa-linkedin :hover,
+.fa-instagram :hover,
+.fa-youtube:hover{
+    color: #d5d5d5;
+}
+footer{
+    background-color: rgb(204, 209, 204);
+    color: black;
+    padding-top: 2rem;
+}
+hr.light{
+    /* #d5d5d5 */
+    border-top: 1px solid #73C152;
+    width: 100%;
+    margin-top:  .8rem;
+    margin-bottom:  1rem;
+}
+footer a{
+    color: black;
+}
+hr.light-100{
+    border-top: 2px solid #73C152;
+    width: 95%;
+    margin-top:  .8rem;
+    margin-bottom:  1rem;
+}
+/* media querries*/
+@media(max-width: 992px){
+
+    .social a{
+        font-size: 4em;
+        padding: 2rem;
+    }   
+}
+@media( max-width:768px){
+    .carousel-caption {
+        top: 45%;  
+    }
+    .carousel-caption h1{
+        font-size: 350%;
+    }
+    .carousel-caption h3{
+        font-size: 140%;
+        font-weight: 400;
+        padding-bottom: .2rem;
+    }
+    .carousel-caption .btn {
+        font-size: 95%;
+        padding: 8px 14px;  
+    }
+    .display-4{
+        font-size: 200%;
+    }
+    
+    .social a{
+        font-size: 2.5em;
+        padding: 1.2rem;
+    }
+    
+}
+@media(max-width: 576px){
+    .carousel-caption {
+        top: 40%;  
+    }
+    .carousel-caption h1{
+        font-size: 250%;
+    }
+    .carousel-caption h3{
+        font-size: 110%;
+        font-weight: 400;
+        
+    }
+    .carousel-caption .btn {
+        font-size: 90%;
+        padding: 8px 14px; 
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .display-4{
+        font-size: 160%;
+    }
+    .social a{
+        font-size: 2rem;
+        padding: .7rem;
+    }
+    
+}
+
