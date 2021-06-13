@@ -63,7 +63,7 @@ html {
   .tm-block {
     padding: 40px;
     -webkit-box-shadow: 1px 1px 5px 0 whitesmoke;
-    -moz-box-shadow: 1px 1px 5px 0 #455c71;
+    -moz-box-shadow: 1px 1px 5px 0 rgb(204,209,204);
     box-shadow: 1px 1px 5px 0 #e6f0f8;
     min-height: 350px;
     height: 100%;
@@ -94,7 +94,7 @@ html {
     margin-bottom: 30px;
   }
   .nav-link {
-    color:#415a70;
+    color:rgb(204,209,204);
     height: 100%;
     display: flex;
     align-items: center;
@@ -114,14 +114,14 @@ html {
   .dropdown-menu {
     font-size: 90%;
     color: black;
-    background-color:#415a70;
+    background-color:rgb(204,209,204);
     border-radius: 0;
     padding-top: 10px;
     padding-bottom: 10px;
     min-width: auto;
   }
   .dropdown-item {
-    color: #415a70;
+    color: rgb(204,209,204);
     padding: 15px 30px;
   }
   .navbar-nav .active > .nav-link,
@@ -173,7 +173,7 @@ html {
   .tm-gray-circle {
     width: 80px;
     height: 80px;
-    background-color: #415a70;
+    background-color: rgb(204,209,204);
     border-radius: 50%;
     margin-right: 15px;
   }
@@ -183,7 +183,7 @@ html {
   }
   .tm-notification-item {
     padding: 15px;
-    background-color: #415a70;
+    background-color: rgb(204,209,204);
     color:black;
     font-size: 95%;
     margin-bottom: 15px;
@@ -206,7 +206,7 @@ html {
     margin-bottom: 0;
   }
   thead {
-    background-color: #415a70;
+    background-color: rgb(204,209,204);
     color:black;
   }
   .table thead th {
@@ -281,7 +281,7 @@ html {
     border: 0;
   }
   .form-control:focus {
-    background-color: #60738e;
+    background-color: rgb(204,209,204);
     color:black;
     border-color: transparent;
     box-shadow: 0 0 0 0.1rem #d4f8ea;
@@ -305,7 +305,7 @@ html {
     padding: 8px;
   }
   .tm-list-group > li:hover {
-    color: #0266c4;
+    color: rgb(204,209,204);
   }
   .tm-list-group > li:before {
     counter-increment: myOrderedListItemsCounter;
@@ -357,7 +357,7 @@ html {
   }
   .table td,
   .table th {
-    border-top: 1px solid #415a70;
+    border-top: 1px solid rgb(204,209,204)0;
     padding: 15px 25px;
     vertical-align: middle;
   }
@@ -411,7 +411,7 @@ html {
     cursor: pointer;
     -webkit-appearance: none;
     appearance: none;
-    background-color: #394e64;
+    background-color: rgb(204,209,204);
     background-position: center;
     border-radius: 50%;
     box-sizing: border-box;
@@ -422,7 +422,7 @@ html {
     transition: all 0.1s linear;
   }
   input[type="checkbox"]:checked {
-    background: url(../img/check-mark.png) #394e64 center no-repeat;
+    background: url(../img/check-mark.png) rgb(204,209,204) center no-repeat;
   }
   input[type="checkbox"]:focus {
     outline: 0 none;
@@ -453,19 +453,19 @@ html {
   .tm-product-delete-link {
     padding: 10px;
     border-radius: 50%;
-    background-color: #394e64;
+    background-color: rgb(204,209,204);
     display: inline-block;
     width: 40px;
     height: 40px;
     text-align: center;
   }
   .tm-product-delete-link:hover .tm-product-delete-icon {
-    color: #6d8ca6;
+    color: rgb(204,209,204);
   }
   .custom-select {
     width: 100%;
     border: none;
-    color: #acc6de;
+    color: black;
     height: 50px;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -478,7 +478,7 @@ html {
     -o-border-radius: 0;
     border-radius: 0;
     padding: 15px;
-    background: url(../img/arrow-down.png) 98% no-repeat #50657b;
+    background: url(../img/arrow-down.png) 98% no-repeat rgb(204,209,204);
   }
   .custom-select:focus {
     outline: 0;
@@ -509,7 +509,7 @@ html {
     align-items: center;
     justify-content: center;
     color: white;
-    background: #394e64;
+    background: rgb(204,209,204);
   }
   .tm-product-img-edit {
     max-width: 100%;
@@ -523,7 +523,7 @@ html {
     display: block;
   }
   .tm-upload-icon {
-    background: #455c71;
+    background: rgb(204,209,204);
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -535,7 +535,7 @@ html {
     max-width: 470px;
   }
   .navbar-toggler {
-    border-color: #708da8;
+    border-color: rgb(204,209,204);
     box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 2px;
     border-radius: 0;
     padding: 10px 15px;
@@ -546,7 +546,7 @@ html {
     color: #f5a623;
   }
   .tm-nav-icon {
-    color:white;
+    color:black;
   }
   .navbar-toggler:hover .tm-nav-icon {
     color: #f5a623;
@@ -556,10 +556,10 @@ html {
     height: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: #394f62;
+    background: rgb(204,209,204);
   }
   ::-webkit-scrollbar-thumb {
-    background: #6d8da6;
+    background: rgb(204,209,204);
   }
   ::-webkit-scrollbar-thumb:hover {
     background: #8ab5d6;
@@ -608,8 +608,8 @@ html {
       text-align: center;
     }
     .nav-link {
-      color: #fff;
-      background-color: #567086;
+      color: black;
+      background-color: rgb(204,209,204);
       padding: 15px;
       flex-direction: row;
     }
