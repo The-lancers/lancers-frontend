@@ -34,7 +34,7 @@
                             </div>
                         </div> 
                         <!-- signup form -->
-                        <form class="registration-form row g-3 needs-validation" method="POST" action="#" name="registration" novalidate>
+                        <form class="registration-form row g-3 needs-validation" id="registerForm" method="POST" action="./signup.html" name="registration" novalidate>
                     
                             <div class="col-md-12">
                                 <!-- <label for="full_name" class="registration-form">Full Name</label> -->
@@ -119,13 +119,123 @@
             </div>
         </div> 
     </div>
-    <script>
+    <!-- <script>
         function myFunction() {
           document.getElementById("demo").innerHTML = "Account created successfully";
         }
-        </script>
+        </script> -->
+        <script src="../js/registration.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-    <script src="../js/registration.js"></script>
+    <!-- <script src="../js/registration.js"></script> -->
+
+
+    <script>
+        var myForm = new bootstrap.form(document.getElementById('registerForm'), {
+          keyboard: false
+        })
+        const registerBtn = document.querySelector('#registerBtn');
+        const registerForm = document.querySelector('#registerForm');
+        // const reviewsHolder = document.querySelector('.reviews-section');
+        const loader = document.querySelector('#loader');
+        const backendUrl = 'https://japotech.herokuapp.com/';
+        const authLocal = 'http://localhost:5050/auth/'
+  
+        registerForm.addEventListener('submit', e => {
+          e.preventDefault();
+          console.log(e);
+          // myModal.hide()
+          let fullName = e.target.full_name.value;
+          let email = e.target.email.value;
+          let password = e.target.password.value;
+          let gender = e.target.gender.value;
+          let location = e.target.location.value;
+          console.log(fullName, email, password, gender, location);
+  
+          // perform a request to save data
+          if(fullName &&  email &&  password && gender && location) {
+            console.log('saving data...')
+            loader.textContent = 'Saving......'
+            // use fetch api to save data on the server
+            fetch(`${backendUrl}/add`, {
+              headers: {
+                'Content-Type':'application/json'
+              },
+              body: JSON.stringify({fullName, email, password, gender, location}),
+              method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+              console.log(data)
+              
+              window.location.reload()
+              loader.textContent = '';
+  
+            })
+            .catch(error => console.error(error.toString()));
+          }
+      
+        })
+  
+  
+      function deleteRegister(id) {
+        let s = id
+        let deleteUrl = `${backendUrl}/${s}/delete`
+        console.log(deleteUrl)
+        fetch(deleteUrl, {
+          method:'DELETE',
+        })
+               .then(response => response.json())
+               .then(data => {
+                 window.location.reload()
+               })
+               .catch(error => console.error(error));
+      }
+  
+    //   function createCard(review) {
+    //   let {fullName, message, _id} = review;
+    //   const reviewCard = document.createElement('div');
+    //      reviewCard.classList= 'card mb-2';
+    //      reviewCard.setAttribute('id', _id)
+  
+    //      // h4 for reviewer name
+    //      const cardHeader = document.createElement('div');
+    //      cardHeader.className = 'card-header';
+  
+    //      // div holding the card details
+    //      const cardContent = document.createElement('div');
+    //      cardContent.className = 'card-body';
+  
+    //      //paragraph holding the review text
+    //      const cardText = document.createElement('p');
+    //      cardText.className = 'text-responsive';
+  
+    //      cardHeader.textContent = fullName;
+    //      reviewCard.appendChild(cardHeader); // adds reviewer name to the DOM
+         
+    //      // add review
+    //      cardText.textContent = message;
+    //      cardContent.appendChild(cardText);
+  
+    //      // now add reviews to the page
+    //      reviewCard.appendChild(cardContent);
+  
+    //      reviewCard.addEventListener('dblclick', (e) => {
+    //        let reviewElement = e.target.parentElement;
+    //        let _id = reviewElement.getAttribute('id')
+    //        if(confirm('Are you sure you want to delete the review?')) {
+    //          deleteReview(_id) 
+    //         // console.log(_id)
+    //        }
+    //        return;
+    //      })
+    //      reviewsHolder.appendChild(reviewCard);
+  
+  
+        
+      </script>
+     
+
+
 </body>
 </html>
