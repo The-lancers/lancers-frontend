@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+  
+  <title>Our team</title>
+
+  <style>
+      
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #73C152;
+  font-family: "Poppins", sans-serif;
+}
+.bg-white-override{
+  background-color:  rgb(204, 209, 204);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: #333; */
+}
+.navbar-nav >li > a {
+    color: black;
+    text-decoration: none;
+}
+.navbar-nav >li > a:hover{
+    color: #7CCE04;
+    transition: 0.5s;
+    text-decoration: solid underline;
+}
+a:active {
+    color: #7CCE04;
+}
+a:visited {
+    color:  #7CCE04;
+  }
+
+.container {
+  margin: 20px 40px;
+  color: white;
+
+}
+
+.heading {
+  font-size: 60px;
+  color:black;
+}
+
+.heading span {
+  font-style: italic;
+  font-size: 30px;
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 80px;
+}
+
+.profile {
+  flex-basis: 260px;
+}
+
+.profile .profile-img {
+  height: 260px;
+  width: 260px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.profile:hover .profile-img {
+  filter: grayscale(0);
+}
+
+.user-name {
+  margin-top: 30px;
+  font-size: 35px;
+}
+
+.profile h5 {
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: ghostwhite;
+}
+
+.profile p {
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
+  }
+}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-light bg-white-override">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="../images/logo.png" width="90" height="100" alt="japotech solutions logo">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li style="float:right" class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">back home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- <div class="container-fluid">
+    <h1 class="heading"><span>meet </span>Our Team</h1>
+    <div class="profiles">
+      <div class="profile">
+        <img src="../images/allen1.png" class="profile-img">
+
+        <h3 class="user-name">Allena</h3>
+        <h5>Software developer</h5>
+        <p>Allen works as our software developer at Japotech solutions. She makes sure all our clients needs are met.
+          Additionally she is a STEM (Science, Technology, Engineering and Math) Educator. 
+          She teaches practical skills in robotics and engineering to children between ages 4 to 17 years</p>
+      </div>
+      <div class="profile">
+        <img src="../images/allen1.png" class="profile-img">
+
+        <h3 class="user-name">Jayne</h3>
+        <h5>Managing Partner</h5>
+        <p>Jayne works as our software developer at Japotech solutions. She makes sure all our clients needs are met.
+          Additionally she is a STEM (Science, Technology, Engineering and Math) Educator. 
+          She teaches practical skills in robotics and engineering to children between ages 4 to 17 years</p>
+      </div>
+      <div class="profile">
+        <img src="../images/allen1.png" class="profile-img">
+
+        <h3 class="user-name">Juliet</h3>
+        <h5>Managing Partner</h5>
+        <p>Juliet works as our software developer at Japotech solutions. She makes sure all our clients needs are met.
+          Additionally she is a STEM (Science, Technology, Engineering and Math) Educator. 
+          She teaches practical skills in robotics and engineering to children between ages 4 to 17 years</p>
+      </div>
+      <div class="profile">
+        <img src="../images/hanifa.jpeg" class="profile-img">
+
+        <h3 class="user-name">Hanifa</h3>
+        <h5>Project Manager</h5>
+        <p>Hanifa works as our software developer at Japotech solutions. She makes sure all our clients needs are met.
+          Additionally she is a STEM (Science, Technology, Engineering and Math) Educator. 
+          She teaches practical skills in robotics and engineering to children between ages 4 to 17 years</p>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="container-fluid">
+    <h1 class="heading"><span>meet </span>Our Team</h1>
+    <div class="profiles">
+      <div class="profile">
+        <img src="../images/allen1.png" class="profile-img">
+
+        <h3 class="user-name">Allena</h3>
+        <h5>Developer</h5>
+        <p>Allen works as our software developer at Japotech solutions. She makes sure all our clients needs are met.
+          Additionally she is a STEM (Science, Technology, Engineering and Math) Educator. 
+          </p>
+          <!-- She teaches practical skills in robotics and engineering to children between ages 4 to 17 years -->
+      </div>
+      <div class="profile">
+        <img src="../images/jayne.jpeg" class="profile-img">
+
+        <h3 class="user-name">Jayne</h3>
+        <h5>Senior developer</h5>
+        <p>Jayne works as our senior software developer at Japotech solutions. She makes sure all our clients needs are met.
+          Additionally she is a systems analyst</p>
+      </div>
+      <div class="profile">
+        <img src="../images/hanifa.jpeg" class="profile-img">
+
+        <h3 class="user-name">Hanifa</h3>
+        <h5>Feild Manager</h5>
+        <p>Hanifa works as our field manager at Japotech solutions. She makes sure all our clients needs are met.
+          Additionally she is a lawyer</p>
+      </div>
+    </div>
+
+    <!-- <div class="container-fluid">
+      <div class="profiles">
+        <div class="profile">
+          <img src="../images/logo.png" class="profile-img">
+        <h3 class="user-name">Juliet</h3>
+        <h5>Country supervisor</h5>
+        <p>Juliet works as our Country supervisor at Japotech solutions. She supervises all country sales agents
+          Additionally she is a Nurse</p>
+        </div>
+        <div class="profile">
+          <img src="../images/logo.png" class="profile-img">
+          <h3 class="user-name">Yinginiya</h3>
+          <h5>Telecom engineer</h5>
+          <p>Our senior Telecom engineer at Japotech solutions makes sure all our clients needs are met.
+            Additionally she is also a telecom engineer</p>
+        </div>
+        <div class="profile">
+          <img src="../images/logo.png" class="profile-img">
+  
+          <h3 class="user-name">Eng. Benda</h3>
+          <h5>Regional supervisor</h5>
+          <p>Eng. Benda works as our Regional supervisor at Japotech solutions. He supervises all regional sales agents.
+            Additionally he is a footballer </p>
+        </div>
+      </div>
+  </div> -->
+
+  <!-- footer section -->
+  <footer class="container-fluid bg-white-override">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img src="../images/logo.png" width="30%" height="40%" alt="lost">
+        <!-- <hr class="light"> -->
+        <p>+256 778406544</p>
+        <p>Email: allenrosej@gmail.com</p>
+        <p>Ntinda II road</p>
+        <p>Kampala-uganda</p>
+      </div>
+      <div class="col-md-4">
+        <hr class="light">
+        <h4>Working hours</h4>
+        <hr class="light">
+        <p> 24/7 hours services </p>
+        <p>Monday to Sunday </p>
+        <p>Kampala-uganda</p>
+    </div>
+    <div class="col-md-4">
+      <hr class="light">
+      <h4>Service Areas</h4>
+      <hr class="light">
+      <p>Mukono </p>
+      <p>Mbarara</p>
+      <p>Kampala</p>
+      <p>Wakiso</p>
+  </div> 
+  <div class="col-12">
+    <hr class="light">
+    <h5>Designed by: Lancers Team. &copy; www.japotechsolutions.com</h5>
+  </div>          
+  </div>
+  </footer>
+
+  <!-- my scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
