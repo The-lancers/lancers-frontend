@@ -107,7 +107,10 @@ html, body {
     text-align: center;
 }
 h1.display-4{
-    font-size: 30px;
+    font-size: 20px;
+}
+p.lead{
+    font-size: 15px;
 }
 
 /* services section */
@@ -239,7 +242,7 @@ hr.light-100{
         padding: 8px 14px;  
     }
     .display-4{
-        font-size: 200%;
+        font-size: 150%;
     }
     
     .social a{
@@ -268,7 +271,7 @@ hr.light-100{
         display: none;
     }
     .display-4{
-        font-size: 160%;
+        font-size: 120%;
     }
     .social a{
         font-size: 2rem;
